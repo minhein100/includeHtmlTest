@@ -1,0 +1,124 @@
+html, body {
+    background-color: #8BA1BB;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+@font-face {
+    font-family: Meiryo;
+    src: url('meiryo.ttc');
+}
+
+div.content {
+    background-color: white;
+    margin: 20px 8px 20px 8px;
+    padding: 10px 8px 20px 8px;
+    /*min-width: 350px; */
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+#repousse{
+    background-color: #80d0e0;
+    margin: 20px 8px 0px 8px;
+    /* padding: 10px 8px 20px 8px; */
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#repousse2{
+    background-color: white;
+    margin: 0px 8px 20px 8px;
+    padding: 10px 8px 20px 8px;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#activityTitle{
+    text-align:center;
+    font-size:38px;
+    font-family:Meiryo;
+    margin-top:25px;
+}
+
+#info{
+    text-align:center;
+    font-size:20px;
+    font-family:Meiryo;
+    margin-top:30px;
+}
+
+#cardArea{
+    width:340px;
+    height:200px;
+    margin:auto;
+    margin-top:25px;
+    border:3px solid #ABB7B7;
+    border-radius:5px;
+    position:relative;
+    overflow:hidden;
+}
+
+.card{
+    width:340px;
+    height:200px;
+    position:absolute;
+    text-align:center;
+    line-height:200px;
+    font-size:45px;
+    color:#efefef;
+    font-family:Meiryo;
+    cursor:pointer;
+}
+
+#nextButton{
+    width:80px;
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    cursor:pointer;
+    color:#efefef;
+    margin:auto;
+    margin-top:30px;
+    background-color:#019875;
+    border: 2px solid #1E824C;
+    border-radius:5px;
+    font-family:Meiryo;
+}
+
+#nextButton:hover{
+opacity:.6;
+}
+
+#finalMessage{
+    text-align:center;
+    font-size:30px;
+    margin-top:30px;
+    font-family:Meiryo;
+}
+
+#otherButton{
+    width:80px;
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    cursor:pointer;
+    color:white;
+    margin:auto;
+    margin-top:30px;
+    background-color:#90e6d2;
+    border: 2px solid #1E824C;
+    border-radius:5px;
+    font-family:Meiryo;
+}
+
+#otherButton:hover{
+    opacity:.6;
+    }
