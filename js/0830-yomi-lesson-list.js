@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#lessonListArea1")
-    .append('<div id="lessonListButton"><a href=\"includeHtmlTest/0830yomi1.html\" style="text-decoration:none;">０１</a></div>');
+    .append('<div id="lessonListButton"><a href=\"../includeHtmlTest/0830yomi1.html\" style="text-decoration:none;">０１</a></div>');
     $("#lessonListArea1")
     .append('<div id="lessonListButton"><a href=\"../html/0830yomi2.html\" style="text-decoration:none;">０２</a></div>');
     $("#lessonListArea1")
