@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <link href="/css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/lesson_list.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/dropdownmenu.css" rel="stylesheet" type="text/css"/>
+        <script src="/js/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="repousse">            
+            <div class="navbar">
+                <!-- <a href="#home">Home</a> -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction1()">08:30AM Class</button>
+                    <div class="dropdown-content" id="myDropdown1">
+                        <a href="/html/830class_yomikata_lesson.html">読み方練習</a>
+                        <a href="/html/830class_multi_lesson.html">選択肢問題</a>
+                        <!-- <a href="830class_yomikata.html">言葉の説明</a> -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction2()">10:30AM Class</button>
+                    <div class="dropdown-content" id="myDropdown2">
+                        <a href="/html/1030class_yomikata_lesson.html">読み方練習</a>
+                        <a href="/html/1030class_multi_lesson.html">選択肢問題</a>
+                        <!-- <a href="830class_yomikata.html">漢字クイズ</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction1() {
+                document.getElementById("myDropdown1").classList.toggle("show");
+                var myDropdown2 = document.getElementById("myDropdown2");
+                if (myDropdown2.classList.contains('show')) {
+                        myDropdown2.classList.remove('show');
+                    }
+            }
+
+            function myFunction2() {
+                document.getElementById("myDropdown2").classList.toggle("show");
+                var myDropdown1 = document.getElementById("myDropdown1");
+                if (myDropdown1.classList.contains('show')) {
+                        myDropdown1.classList.remove('show');
+                    }
+            }
+
+            /* Close the dropdown if the user clicks outside of it */
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown1 = document.getElementById("myDropdown1");
+                    var myDropdown2 = document.getElementById("myDropdown2");
+                    if (myDropdown1.classList.contains('show')) {
+                        myDropdown1.classList.remove('show');
+                    }else {
+                        myDropdown2.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

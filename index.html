@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+   <title>クラス選び</title>
+   <meta charset="UTF-8"/>
+   <link href="./css/dropdownmenu.css" rel="stylesheet" type="text/css"/>
+   <script src="./js/jquery.min.js"></script>
+   
+</head>
+<body>
+   <div id="includeHtml"></div>
+   <div id="repousse2">
+    <div id="info"><p>画面の左上の「項目選び」をクリックすると練習したい項目が選べられます。</p></div>
+            <div id="info"><p>「803の8:30AMクラス」の授業で教えた言葉で作った練習です。</p></div>
+   </div>
+   <!-- <script>
+      $(function() {
+         $("#includeHtml").load("menubar.html");
+      });
+   </script> -->
+
+   <!-- Test using get method -->
+   <script>
+      $(function() {
+         $.get('./html/menubar.html', appndHtml);
+         function appndHtml(data) {
+            $("#includeHtml").prepend(data);
+         }         
+      });
+   </script>   
+</body>
+</html>
